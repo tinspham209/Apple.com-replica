@@ -219,9 +219,6 @@ header {
   .iphone-11-pro {
     margin-top: 4.8rem;
   }
-  .nav-list-larger {
-    display: none;
-  }
 
   .nav-list {
     margin-top: 0;
@@ -276,5 +273,81 @@ header {
     margin-top: 0;
     transform: rotate(-45deg);
     transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  header.active {
+    height: 100%;
+    background-color: #000;
+  }
+
+  .nav-link-apple {
+    width: 1.8rem;
+    height: 4.8rem;
+    position: relative;
+    z-index: 1500;
+  }
+
+  .nav-link-bag {
+    width: 1.6rem;
+    height: 4.8rem;
+    transition: opacity 3s;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-link {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .nav-list-larger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    padding: 10.5rem 5rem;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+
+  .active .nav-list-larger {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .active .nav-link-bag {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .nav-list-larger .nav-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  .nav-list-larger .nav-item:nth-child(9) {
+    border-bottom: none;
+  }
+
+  .active .nav-list-larger {
+    animation: fadeIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
