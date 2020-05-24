@@ -1,4 +1,4 @@
-/*CSS*/
+/* Global */
 *,
 *::before,
 *::after {
@@ -22,6 +22,7 @@ a {
   padding: 0 2.2rem;
 }
 
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -72,22 +73,11 @@ header {
   height: 4.4rem;
   background: url("images/icons//bag.svg") center no-repeat;
 }
+
+/* iPhone-11-pro */
 .iphone-11-pro {
   background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
   margin-top: 4.4rem;
-}
-
-.hero {
-  height: 69.2rem;
-  background-size: auto 73.6rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-top: 0.6rem solid #fff;
-  border-bottom: 0.6rem solid #fff;
-}
-
-.iphone-11-pro {
-  border-top: none;
 }
 
 .title {
@@ -133,3 +123,35 @@ header {
 .cta-link:hover {
   border-bottom: 2px solid #66bbff;
 }
+
+/* iPhone 11 section */
+.iphone-11 {
+  background: url(images/hero/iphone-11/iphone_11_large.jpg);
+}
+
+.title-dark {
+  color: #000;
+}
+
+.cta-link-darker {
+  color: #0070c9;
+}
+
+.cta-link-darker:hover {
+  border-bottom-color: #0070c9;
+}
+
+/* Moved to the bottom of all section styles to keep consistent styles */
+.hero {
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid #fff;
+  border-bottom: 0.6rem solid #fff;
+}
+
+.iphone-11-pro {
+  border-top: none;
+}
+/* end */
