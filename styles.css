@@ -117,7 +117,7 @@ header {
 
 .title-heading-watch {
   height: 7.8rem;
-  background: url(images/hero/watch/logo_watch_medium.png) center no-repeat;
+  background: url(images/hero/watch/logo_watch_large.png) center no-repeat;
   background-size: auto 7.8rem;
   margin-top: 1.6rem;
 }
@@ -170,3 +170,38 @@ header {
   border-top: none;
 }
 /* end */
+
+@media screen and (max-width: 1068px) {
+  .iphone-11-pro {
+    background: url(images/hero/iphone-11-pro/iphone_11_pro_medium.jpg);
+  }
+  .iphone-11 {
+    background: url(images/hero//iphone-11//iphone_11_medium.jpg);
+  }
+  .watch {
+    background: url(images/hero//watch/watch_medium.jpg);
+  }
+
+  .hero {
+    height: 65rem;
+    background-size: auto 69.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title-heading {
+    font-size: 4.4rem;
+  }
+  .title-sub-heading {
+    font-size: 2.4rem;
+  }
+
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
+  }
+  .title-heading-watch {
+    height: 6.2rem;
+    background: url(images/hero/watch/logo_watch_medium.png) center no-repeat;
+    background-size: auto 6.2rem;
+  }
+}
