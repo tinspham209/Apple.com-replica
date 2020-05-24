@@ -205,3 +205,76 @@ header {
     background-size: auto 6.2rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 4.8rem;
+    transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
+      height 0.56s cubic-bezier(0.32, 0.08, 0.24, 1);
+  }
+  header .container {
+    padding: 0;
+  }
+
+  .iphone-11-pro {
+    margin-top: 4.8rem;
+  }
+  .nav-list-larger {
+    display: none;
+  }
+
+  .nav-list {
+    margin-top: 0;
+  }
+  .nav-list-mobile {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-item.hidden {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .line {
+    position: absolute;
+    width: 1.7rem;
+    height: 1px;
+    background-color: #fff;
+    transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line-top {
+    margin-top: 3px;
+  }
+  .line-bottom {
+    margin-top: -0.4rem;
+  }
+
+  .active .line-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+  .active .line-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+}
