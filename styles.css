@@ -351,3 +351,49 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 735px) {
+  .iphone-11-pro {
+    background: url(images/hero/iphone-11-pro/iphone_11_pro_small.jpg);
+  }
+  .iphone-11 {
+    background: url(images/hero//iphone-11//iphone_11_small.jpg);
+  }
+  .watch {
+    background: url(images/hero//watch/watch_small.jpg);
+  }
+  .hero {
+    height: 50rem;
+    background-size: auto 54.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    padding: 3.7rem;
+  }
+
+  .title-heading {
+    font-size: 3.2rem;
+  }
+  .title-sub-heading {
+    font-size: 1.9rem;
+  }
+
+  .title-heading-watch {
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+  }
+
+  .title-price {
+    font-size: 1.4rem;
+  }
+
+  .cta {
+    margin-top: 0.7rem;
+  }
+
+  .cta-link {
+    font-size: 1.9rem;
+  }
+}
